@@ -1,0 +1,35 @@
+name: HubBlocks
+author: WolfLeader116
+main: io.github.wolfleader116.hubblocks.bukkit.HubBlocks
+version: 1.0
+description: Allows for creation of loot chests, infinite anvils and more!
+depend: [WolfAPI]
+softdepend: [WorldGuard]
+commands:
+  hubblocks:
+    description: HubBlocks Menu
+permissions:
+  hubblocks.infiniteanvil:
+    description: Allows the player to create infinite anvils
+    default: op
+  hubblocks.lootchest:
+    description: Allows the player to create loot chests
+    default: op
+  hubblocks.reload:
+    description: Allows the player to reload the plugin
+    default: op
+  hubblocks.reset:
+    description: Allows the player to reset the plugin
+    default: op
+  hubblocks.migrate:
+    description: Allows the player to migrate plugin data
+    default: op
+  hubblocks.*:
+    description: Gives the user all WolfAPI permissions
+    default: op
+    children:
+      hubblocks.reload: true
+      hubblocks.reset: true
+      hubblocks.migrate: true
+      hubblocks.infiniteanvil: true
+      hubblocks.lootchest: true

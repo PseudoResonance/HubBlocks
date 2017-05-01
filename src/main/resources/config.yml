@@ -1,0 +1,15 @@
+#########################
+#HubBlocks Bukkit Config#
+#########################
+
+#DO NOT CHANGE THIS LINE! YOUR CONFIG WILL BE RESET UPON LOADING IF THIS LINE IS EDITED!
+Version: 1
+
+####################
+#WorldGuard Support#
+####################
+
+#Infinite Anvils in World Guard Regions
+#Add region names here
+Regions:
+  - spawn
